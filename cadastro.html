@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastrar Medição</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Monitoramento Ambiental</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="monitoramento.html">Áreas Monitoradas</a>
+      <a href="cadastro.html">Cadastrar Medição</a>
+      <a href="sobre.html">Sobre</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <h2>Cadastrar Nova Medição</h2>
+    <form>
+      <label for="tipo">Tipo de Monitoramento:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecione</option>
+        <option>Ar</option>
+        <option>Água</option>
+        <option>Solo</option>
+        <option>Fauna</option>
+        <option>Flora</option>
+      </select>
+
+      <label for="local">Local da Medição:</label>
+      <input type="text" id="local" name="local" required />
+
+      <label for="valor">Valor Obtido:</label>
+      <input type="number" id="valor" name="valor" step="0.01" required />
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required />
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Monitoramento Ambiental | contato@email.com</p>
+  </footer>
+</body>
+</html>
